@@ -69,28 +69,28 @@ body {
 }
 
 .cabecalho__videos {
-    background-image: url(../img/topbar/video_call.png);
+    background-image: url(../assets/topbar/video_call.png);
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
 }
 
 .cabecalho__apps {
-    background-image: url(../img/topbar/apps.png);
+    background-image: url(../assets/topbar/apps.png);
     background-repeat: no-repeat;
     background-position: center;
     padding: 13px 30px 13px 13px;
 }
 
 .cabecalho__notificacoes {
-    background-image: url(../img/topbar/notifications.png);
+    background-image: url(../assets/topbar/notifications.png);
     background-repeat: no-repeat;
     background-position: center;
     padding: 13px 30px 13px 13px;
 }
 
 .cabecalho__avatar {
-    background-image: url(../img/topbar/Avatar.png);
+    background-image: url(../assets/topbar/Avatar.png);
     background-repeat: no-repeat;
     background-position: center;
     padding: 13px 30px 13px 33px;
@@ -150,6 +150,89 @@ body {
     transform: translateX(26px);
   }
 
+
+/* MENU LATERAL */
+
+.menu__container {
+    font-size: 14px;
+    background-color: var(--branco);
+}
+
+.icone__inicio::before {
+    content: url(../assets/sidebar/home.png);
+}
+
+.icone__explorar::before {
+    content: url(../assets/sidebar/explore.png);
+}
+
+.icone__shorts::before {
+    content: url(../assets/sidebar/airplay.png);
+}
+
+.icone__inscricoes::before {
+    content: url(../assets/sidebar/subscriptions.png);
+}
+
+.icone__biblioteca::before {
+    content: url(../assets/sidebar/video_library.png);
+}
+
+.icone__historico::before {
+    content: url(../assets/sidebar/history.png);
+}
+
+.icone__relogio::before {
+    content: url(../assets/sidebar/history_toggle_off.png);
+}
+
+.icone__like::before {
+    content: url(../assets/sidebar/thumb_up_alt.png);
+}
+
+.icone__alura::before {
+    content: url(../assets/sidebar/Avatar_Alura.png);
+}
+
+.icone__gaveta::before {
+    content: url(../assets/sidebar/Avatar_Gaveta.png);
+}
+
+.icone__ballerini::before {
+    content: url(../assets/sidebar/Avatar_Rafa.png);
+}
+
+.icone__iamarino::before {
+    content: url(../assets/sidebar/Avatar_Atila.png);
+}
+
+.icone__souto::before {
+    content: url(../assets/sidebar/Avatar_Souto.png);
+}
+
+.icone__nerd::before {
+    content: url(../assets/sidebar/Avatar_Jovem_Nerd.png);
+}
+
+.icone__deschamps::before {
+    content: url(../assets/sidebar/Avatar_Deschamps.png);
+}
+
+.icone__mostrar::before {
+    content: url(../assets/sidebar/keyboard_arrow_down.png);
+}
+
+.icone__videos::before {
+    content: url(../assets/sidebar/ondemand_video.png);
+}
+
+.icone__filmes::before {
+    content: url(../assets/sidebar/movie.png);
+}
+
+.icone__jogos::before {
+    content: url(../assets/sidebar/sports_esports.png);
+}
 
 /* SECAO SUPERIOR */
 
@@ -235,6 +318,20 @@ iframe{
         height: 100vh;
     }
 
+    /* ESTILOS DO MENU LATERAL */
+
+    .menu__container {
+        font-size: 16px;
+    }
+
+    .menu__lista {
+        padding-top: 15px;
+    }
+
+    .menu__lista li {
+        width: 100%;
+    }
+
     /* ESTILOS DA SECAO SUPERIOR */
 
     .superior__secao__container {
@@ -259,6 +356,12 @@ iframe{
 
     .superior__secao__container {
         left: 247px;
+    }
+
+    /* ESTILOS DO MENU LATERAL */
+
+    .menu__lista {
+        border-bottom: 1.5px solid var(--azul-medio);
     }
 
     /* ESTILOS VIDEOS */
